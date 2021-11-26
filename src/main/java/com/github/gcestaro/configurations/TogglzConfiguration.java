@@ -1,16 +1,13 @@
 package com.github.gcestaro.configurations;
 
-import com.github.gcestaro.enums.MyFeatures;
-import com.mongodb.MongoClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.togglz.core.manager.EnumBasedFeatureProvider;
 import org.togglz.core.repository.StateRepository;
-import org.togglz.core.spi.FeatureProvider;
 import org.togglz.mongodb.MongoStateRepository;
 
-@SuppressWarnings("ALL")
+import com.mongodb.MongoClient;
+
 @Configuration
 public class TogglzConfiguration {
 
